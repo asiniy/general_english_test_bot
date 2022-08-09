@@ -39,7 +39,8 @@ class Commands(BaseCommandList):
     For this case, create another commands list & factory.
     """
 
-    start = Command(name='start', description='Start Bot')
+    start = Command(name='start', description='Start')
+    test = Command(name='test', description='Start test')
 
 
 async def set_bot_commands(bot: Bot) -> None:

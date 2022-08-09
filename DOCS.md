@@ -26,6 +26,8 @@
     - `alembic upgrade head`
     - Add alembic.ini to gitignore
 
+### Go poetry way, Stepan!
+
 5) You have 2 default ways to configure project.
     1) Configure python-app & dependencies with pip:
         - Create venv: `python3.10 -m venv venv`
@@ -66,7 +68,7 @@ should be sent.**
 - To have an obvious structure and logic for storing messages,
   you should have the **duplicated architecture in messages and handlers package.**
   **_For example:_** If handler-module is private chat package named `base`,
-  create the messages storage file with same name in messages/private_chat package.   
+  create the messages storage file with same name in messages/private_chat package.
   *You can check my example with base handler.*
 - **No cross-imports!** Your handler-module should import only one messages storage. E.g.: `base` handler should import
   only `base as msgs` message storage; and do not import another messages from any files.
